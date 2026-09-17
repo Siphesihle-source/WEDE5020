@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simza's Car Wash - Enquiry</title>
+
+    <!-- Poppins heading font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font Awesome 5 icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+
+            <img src="images/Simza's Company Logo.png" alt="Simza's Car Wash Logo">
+
+            <div>
+                <h1>Simza's Car Wash</h1>
+                <p>Reliable and Quality Car Cleaning Services</p>
+            </div>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav>
+
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a class="active" href="enquiry.html">Enquiry</a></li>
+                <li><a href="Contact page.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <section class="page-heading">
+
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                Complete the form below to enquire about our services.
+            </p>
+
+        </section>
+
+
+        <!-- Enquiry form -->
+        <section class="form-section">
+
+            <form>
+
+                <label for="name">Full Name:</label>
+
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+
+                <label for="email">Email Address:</label>
+
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+
+                <label for="phone">Phone Number:</label>
+
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+
+                <label for="service">Select Service:</label>
+
+                <select id="service" name="service" required>
+
+                    <option value="">
+                        Select a service
+                    </option>
+
+                    <option value="exterior">
+                        Exterior Car Wash
+                    </option>
+
+                    <option value="interior">
+                        Interior Cleaning
+                    </option>
+
+                    <option value="full">
+                        Full Car Cleaning
+                    </option>
+
+                </select>
+
+
+                <label for="date">Preferred Date:</label>
+
+                <input type="date" id="date" name="date" required>
+
+
+                <label for="message">Message:</label>
+
+                <textarea id="message" name="message" rows="6" placeholder="Enter your enquiry or booking requirements"
+                    required></textarea>
+
+
+                <button type="submit" class="button">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+    <p>&copy; 2026 Simza's Car Wash. All Rights Reserved.</p>
+
+    <p>Follow us on social media:</p>
+
+    <div class="social-media">
+
+        <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="#" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
