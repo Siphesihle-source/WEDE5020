@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <!-- Makes the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Simza's Car Wash Katlehong</title>
+    <meta name="description"
+      content="Contact Simza's Car Wash in Katlehong for general enquiries, feedback and service information.">
 
     <title>Simza's Car Wash - Contact</title>
 
@@ -13,10 +15,12 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/Part 3.css">
     <!-- Font Awesome 5 icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Header -->
-    <header>
+</head>
+<body>
 
         <div class="logo">
 
@@ -106,6 +110,78 @@
 
         </section>
 
+        
+<!-- Part 3: Contact Form -->
+<section class="contact-form-section">
+    <h2>Send Us a Message</h2>
+
+    <p>
+        Complete the form below if you have a question,
+        complaint, compliment or suggestion.
+    </p>
+
+    <form id="contactForm"
+          data-recipient="SimazasCarWash@gmail.com">
+
+        <div>
+            <label for="contactName">Full Name:</label>
+            <input type="text"
+                   id="contactName"
+                   name="name"
+                   required>
+        </div>
+
+        <div>
+            <label for="contactEmail">Email Address:</label>
+            <input type="email"
+                   id="contactEmail"
+                   name="email"
+                   required>
+        </div>
+
+        <div>
+            <label for="contactPhone">Phone Number:</label>
+            <input type="tel"
+                   id="contactPhone"
+                   name="phone"
+                   placeholder="e.g. 0712345678"
+                   required>
+        </div>
+
+        <div>
+            <label for="messageType">Type of Message:</label>
+            <select id="messageType"
+                    name="messageType"
+                    required>
+                <option value="">-- Select a message type --</option>
+                <option value="General enquiry">General enquiry</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Compliment">Compliment</option>
+                <option value="Suggestion">Suggestion</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contactMessage">Your Message:</label>
+            <textarea id="contactMessage"
+                      name="message"
+                      rows="5"
+                      minlength="10"
+                      required></textarea>
+        </div>
+
+        <div id="contactStatus"
+             class="p3-status"
+             role="status"
+             aria-live="polite"></div>
+
+        <button type="submit">Prepare Email</button>
+
+    </form>
+</section>
+
+
+
 
         <!-- Location section -->
         <section class="map-section">
@@ -131,14 +207,18 @@
                 Siluma view,Main Road,Katlehong
             </p>
 
-            <div class="map-placeholder">
-
-                <p>
-                    Johannesburg, South Africa
-                    Siluma view,Main Road,Katlehong
-                </p>
-
-            </div>
+            <div class="map-container">
+    <iframe
+        src="https://maps.google.com/maps?q=Siluma%20View%2C%20Main%20Road%2C%20Katlehong%2C%20Johannesburg&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map showing the location of Simza's Car Wash in Katlehong">
+    </iframe>
+    </div>
 
         </section>
 
@@ -174,6 +254,8 @@
     </div>
 
 </footer>
+
+<script src="../js/Part 3.js" defer></script>
 
 </body>
 </html>

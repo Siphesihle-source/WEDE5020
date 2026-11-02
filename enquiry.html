@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- Makes the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Wash enquiries | Simza's Car Wash Katlehong</title>
+    <meta name="description"
+      content="Contact Simza's Car Wash in Katlehong for general enquiries, feedback and service information.">
 
     <title>Simza's Car Wash - Enquiry</title>
 
@@ -14,6 +16,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/Part 3.css">
     <!-- Font Awesome 5 icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -68,7 +71,7 @@
         <!-- Enquiry form -->
         <section class="form-section">
 
-            <form>
+            <form id="enquiryForm">
 
                 <label for="name">Full Name:</label>
 
@@ -81,36 +84,26 @@
 
 
                 <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9+\s()-]{10,15}" required>
 
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
 
-                <label for="service">Select Service:</label>
+             <label for="enquiryService">Choose a service:</label>
 
-                <select id="service" name="service" required>
-
-                    <option value="">
-                        Select a service
-                    </option>
-
-                    <option value="exterior">
-                        Exterior Car Wash
-                    </option>
-
-                    <option value="interior">
-                        Interior Cleaning
-                    </option>
-
-                    <option value="full">
-                        Full Car Cleaning
-                    </option>
-
-                </select>
+             <select id="enquiryService" name="service" required>
+             <option value="">-- Select a service --</option>
+             <option value="Exterior Car Wash">Exterior Car Wash - R80</option>
+             <option value="Interior Cleaning">Interior Cleaning - R100</option>
+             <option value="Full Car Cleaning">Full Car Cleaning - R150</option>
+             </select>
 
 
                 <label for="date">Preferred Date:</label>
 
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="enquiryDate" name="date" required>
+
+                <label for="enquiryPhone">Phone number:</label>
+                <input type="tel" id="enquiryPhone" name="phone" required>
 
 
                 <label for="message">Message:</label>
@@ -122,7 +115,7 @@
                 <button type="submit" class="button">
                     Submit Enquiry
                 </button>
-
+                <div id="enquiryStatus" class="p3-status" role="status" aria-live="polite"></div>
             </form>
 
         </section>
@@ -159,6 +152,7 @@
 
 </footer>
 
+<script src="../js/Part 3.js" defer></script>
 
 </body>
 

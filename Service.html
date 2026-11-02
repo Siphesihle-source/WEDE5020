@@ -1,170 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <!-- Makes the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Car Wash Services and Prices | Simza's Car Wash</title>
+    <meta name="description"
+      content="Explore exterior car washing for R80, interior cleaning for R100 and full car cleaning for R150.">
+
     <title>Simza's Car Wash - Services</title>
-
-    <!-- Poppins heading font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
     <link rel="stylesheet" href="../style.css">
-    <!-- Font Awesome 5 icons -->
+    <link rel="stylesheet" href="../css/Part 3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+<header>
+    <div class="logo">
+        <img src="images/Simza's Company Logo.png" alt="Simza's Car Wash Logo">
+        <div>
+            <h1>Simza's Car Wash</h1>
+            <p>Reliable and Quality Car Cleaning Services</p>
+        </div>
+    </div>
 
-    <!-- Header -->
-    <header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a class="active" href="Service.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="Contact page.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="logo">
+<main>
+    <section class="page-heading">
+        <h2>Our Services</h2>
+        <p>Quality car cleaning services for different customers.</p>
+    </section>
 
-            <img src="images/Simza's Company Logo.png" alt="Simza's Car Wash Logo">
+    <!-- Part 3: Service search and filtering -->
+    <section class="services-page">
 
-            <div>
-                <h1>Simza's Car Wash</h1>
-                <p>Reliable and Quality Car Cleaning Services</p>
-            </div>
+        <div class="p3-service-tools">
+            <label for="serviceSearch">Search services:</label>
+            <input type="search"
+                   id="serviceSearch"
+                   placeholder="Search our services...">
 
+            <label for="serviceFilter">Filter by category:</label>
+            <select id="serviceFilter">
+                <option value="all">All services</option>
+                <option value="exterior">Exterior</option>
+                <option value="interior">Interior</option>
+                <option value="full">Full cleaning</option>
+            </select>
+
+            <p id="serviceResult" aria-live="polite">
+                Showing all 3 services.
+            </p>
         </div>
 
+        <!-- Exterior Car Wash -->
+        <div class="service-card"
+             data-service-card
+             data-service-type="exterior">
 
-        <!-- Navigation -->
-        <nav>
+            <img src="images/basic car wash.png"
+                 alt="Exterior car washing service"
+                  data-lightbox>
 
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="About us.html">About Us</a></li>
-                <li><a class="active" href="Service.html">Services</a></li>
-                <li><a href="enquiry.html">Enquiry</a></li>
-                <li><a href="Contact page.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <!-- Main content -->
-    <main>
-
-        <section class="page-heading">
-
-            <h2>Our Services</h2>
+            <h3>Exterior Car Wash</h3>
 
             <p>
-                Quality car cleaning services for different customers.
+                Our exterior car wash helps remove dirt and
+                improve the appearance of your vehicle.
             </p>
 
-        </section>
+            <p><strong>Price: R80</strong></p>
+        </div>
 
+        <!-- Interior Cleaning -->
+        <div class="service-card"
+             data-service-card
+             data-service-type="interior">
 
-        <!-- Service cards -->
-        <section class="services-page">
+            <img src="images/interior.png"
+                 alt="Clean car interior"
+                  data-lightbox>
 
-            <div class="service-card">
-
-                <img src="images/basic car wash.png" alt="Exterior car washing service">
-
-                <h3>Exterior Car Wash</h3>
-
-                <p>
-                    Our exterior car wash helps remove dirt and
-                    improve the appearance of your vehicle.
-                    <p>R80</p>
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img src="images/interior.png" alt="Clean car interior">
-
-                <h3>Interior Cleaning</h3>
-
-                <p>
-                    Interior cleaning helps keep the inside of your
-                    vehicle clean, comfortable and fresh.
-                    <p>R100</p>
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <img src="images/full car wash.png" alt="Full vehicle cleaning">
-
-                <h3>Full Car Cleaning</h3>
-
-                <p>
-                    Our full cleaning service provides cleaning
-                    for both the interior and exterior of the vehicle.
-                    <P>R150</P>
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- Booking section -->
-        <section class="call-to-action">
-
-            <h2>Want to Book a Service?</h2>
+            <h3>Interior Cleaning</h3>
 
             <p>
-                Send us an enquiry and let us know which service
-                you are interested in.
+                Interior cleaning helps keep the inside of your
+                vehicle clean, comfortable and fresh.
             </p>
 
-            <a href="enquiry.html" class="button">
-                Book Now
-            </a>
+            <p><strong>Price: R100</strong></p>
+        </div>
 
-        </section>
+        <!-- Full Car Cleaning -->
+        <div class="service-card"
+             data-service-card
+             data-service-type="full">
 
-    </main>
+            <img src="images/full car wash.png"
+                 alt="Full vehicle cleaning"
+                  data-lightbox>
 
+            <h3>Full Car Cleaning</h3>
 
-      <!--footer-->
+            <p>
+                Our full cleaning service provides cleaning
+                for both the interior and exterior of the vehicle.
+            </p>
 
-      <footer class="site-footer">
+            <p><strong>Price: R150</strong></p>
+        </div>
 
+        <p id="noServicesFound" hidden>
+            No services match your search. Try another search.
+        </p>
+
+    </section>
+
+    <!-- Existing booking section -->
+    <section class="call-to-action">
+        <h2>Want to Book a Service?</h2>
+
+        <p>
+            Send us an enquiry and let us know which service
+            you are interested in.
+        </p>
+
+        <a href="enquiry.html" class="button">Book Now</a>
+    </section>
+</main>
+
+<footer class="site-footer">
     <p>&copy; 2026 Simza's Car Wash. All Rights Reserved.</p>
-
     <p>Follow us on social media:</p>
 
     <div class="social-media">
-
-        <a href="#" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="#" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="#" aria-label="TikTok">
-            <i class="fab fa-tiktok"></i>
-        </a>
-
-        <a href="#" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
-
 </footer>
 
-
+<script src="../js/Part 3.js" defer></script>
 </body>
-
 </html>
